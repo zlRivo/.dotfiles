@@ -1,0 +1,69 @@
+# ------------------------------
+#            GENERAL
+# ------------------------------
+
+# Navigate between windows
+super + {_, shift + }{h, j, k, l}
+    bspc node -{f, s} {west, south, north, east}
+
+# Cycle between windows
+super + {_, shift + }n
+	bspc node -f {next, prev}.local
+
+# Expand window outward
+ctrl + alt + {h, j, k, l}
+	bspc node -z {left -20 0, bottom 0 20, top 0 -20, right 20 0}
+
+# Expand window inward
+ctrl + alt + shift + {h, j, k, l}
+	bspc node -z {right -20 0, top 0 20, bottom 0 -20, left 20 0}
+
+# Move window
+ctrl + alt + {Left,Down,Up,Right}
+	bspc node -v {-20 0, 0 20, 0 -20, 20 0}
+
+# Switch and move windows between workspaces
+super + {_, shift + }{1-9, 0}
+    bspc {desktop -f, node -d} '^{1-9, 10}'
+
+# Change window mode
+super + {t, t + shift, s, f}
+    bspc node -t {tiled, pseudo_tiled, floating, fullscreen}
+
+# Toggle between monocle and tiled
+super + m
+	bspc desktop -l next
+
+# Kill windows (normal and force)
+super + {_, shift + }q
+    bspc node -{c, k}
+
+# Quit bspwm
+super + shift + Escape
+    bspc quit
+
+# Make sxhkd reload its configuration files
+super + Escape
+	pkill -USR1 -x sxhkd
+
+super + Print
+    flameshot gui
+
+# ------------------------------
+#             SOUND
+# ------------------------------
+# super + {KP_Add, KP_Subtract}
+    
+
+
+# ------------------------------
+#             APPS
+# ------------------------------
+
+# Terminal, app launcher
+super + {_, shift + }Return
+    {alacritty, rofi -no-config -no-lazy-grab -show drun -theme ~/.config/polybar/hack/scripts/rofi/launcher.rasi}
+
+# Nautilus, Brave
+super + space + {e,b}
+    {nautilus, brave}

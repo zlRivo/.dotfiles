@@ -1,0 +1,25 @@
+#! /bin/sh
+
+#
+#                 ░█▀▄░█▀▀░█▀█░█░█░█▄█
+#                 ░█▀▄░▀▀█░█▀▀░█▄█░█░█
+#                 ░▀▀░░▀▀▀░▀░░░▀░▀░▀░▀
+#
+
+# Autostart
+pgrep -x sxhkd > /dev/null || sxhkd & # Hotkey daemon
+~/.config/polybar/launch.sh --hack # Bar
+picom & # Compositor
+
+# Workspaces
+bspc monitor -d I II III IV V
+
+bspc config border_width 2
+bspc config window_gap 16
+bspc config split_ratio 0.6
+
+# Rules
+bspc rule -a firefox desktop=^2
+bspc rule -a Alacritty desktop=^1 state=floating
+bspc rule -a nautilus desktop=^1 state=floating
+bspc rule -a cool-retro-term desktop=^3 state=fullscreen

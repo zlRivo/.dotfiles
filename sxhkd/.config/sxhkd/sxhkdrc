@@ -64,6 +64,6 @@ super + Print
 super + {_, shift + }Return
     {alacritty, rofi -no-config -no-lazy-grab -show drun -theme ~/.config/polybar/hack/scripts/rofi/launcher.rasi}
 
-# Nautilus, Brave
+# Nautilus, Browser
 super + space + {e,b}
-    {nautilus, brave}
+    {nautilus, firefox}

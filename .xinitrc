@@ -19,10 +19,9 @@ PATH=$PATH:$HOME/.scripts # Scripts folder
 xset r rate 250 45
 
 # Wallpaper
-feh --bg-fill --randomize ~/Pictures/wallpapers/*
+feh --bg-fill --randomize ~/Pictures/wallpapers/sfw/*
 
 # Startup apps
-./.startup_apps.sh
+# ./.startup_apps.sh
 
 exec bspwm
-

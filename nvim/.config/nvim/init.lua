@@ -190,11 +190,13 @@ require('nvim-cmp-setup')
 -- ---------------------------
 
 -- Color scheme
-vim.opt.background = "dark"
-vim.cmd("colorscheme onedark")
+vim.cmd("colorscheme wal")
 vim.cmd("hi Comment cterm=italic")
 -- Nvim tree
-vim.cmd("hi NvimTreeNormal guibg=#1d1f21")
+-- vim.cmd("hi NvimTreeNormal guibg=#1d1f21")
+
+-- Remove signcolumn gray
+vim.cmd("hi clear SignColumn")
 
 -- Highlighting menu
 vim.cmd("hi Pmenu ctermbg=black ctermfg=white")

@@ -25,11 +25,12 @@ return require('packer').startup(function()
         end,
     }
     
-    -- Coloschemes
+    -- Colorschemes
     use 'liuchengxu/space-vim-dark'
     use 'altercation/vim-colors-solarized'
     use 'joshdick/onedark.vim'
     use 'morhetz/gruvbox'
+    use 'dylanaraps/wal.vim'
     
     -- Icons
     use 'kyazdani42/nvim-web-devicons'
@@ -52,7 +53,7 @@ return require('packer').startup(function()
         requires = {
             'kyazdani42/nvim-web-devicons', -- optional, for file icon
         },
-        config = function() require'nvim-tree'.setup {} end
+        -- config = function() require'nvim-tree'.setup {} end
     }
     
     -- Identation helper

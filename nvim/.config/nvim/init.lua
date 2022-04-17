@@ -203,17 +203,17 @@ vim.cmd("hi Pmenu ctermbg=black ctermfg=white")
 
 -- Airline
 vim.opt.laststatus = 2
-vim.g.airline_theme = "onedark"
+vim.g.airline_theme = "wal"
 vim.g.airline_powerline_fonts = 1
 -- Airline symbols
 if vim.api.nvim_eval('exists("g:airline_symbols")') == "1" then
     vim.g.airline_symbols = {}
 end
 -- Separators
-vim.g.airline_left_sep = ""
-vim.g.airline_left_alt_sep = ""
-vim.g.airline_right_sep = ""
-vim.g.airline_right_alt_sep = ""
+vim.g.airline_left_sep = ""
+vim.g.airline_left_alt_sep = ""
+vim.g.airline_right_sep = ""
+vim.g.airline_right_alt_sep = ""
 
 -- Nvim tree
 require('nvim-tree-setup')

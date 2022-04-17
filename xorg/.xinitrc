@@ -30,6 +30,6 @@ pywal_to_alacritty.sh
 xset r rate 250 45
 
 # Startup apps
-# ./.startup_apps.sh
+./.startup_apps.sh
 
 exec bspwm

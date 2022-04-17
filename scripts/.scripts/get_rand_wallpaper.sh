@@ -1,2 +1,2 @@
 #!/bin/bash
-echo `find -L ~/Pictures/wallpapers/sfw -type f | sort -R | tail -1`
+echo `find -L ~/Pictures/wallpapers -type f | sort -R | tail -1`

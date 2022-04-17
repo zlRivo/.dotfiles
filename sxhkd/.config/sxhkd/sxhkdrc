@@ -62,7 +62,7 @@ super + Print
 
 # Terminal, app launcher
 super + {_, shift + }Return
-    {alacritty, rofi -no-config -no-lazy-grab -show drun -theme ~/.config/polybar/hack/scripts/rofi/launcher.rasi}
+    {alacritty, rofi -show drun}
 
 # Nautilus, Browser
 super + space + {e,b}

@@ -12,7 +12,7 @@ pgrep -x sxhkd > /dev/null || sxhkd & # Hotkey daemon
 picom & # Compositor
 
 # Workspaces
-bspc monitor -d I II III IV V
+bspc monitor -d 一 二 三 四 五
 
 bspc config border_width 2
 bspc config window_gap 5

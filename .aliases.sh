@@ -3,6 +3,8 @@
 # ALIASES
 # ----------------------
 
+alias merge="xrdb -merge ~/.Xresources"
+
 alias ls='lsd' # Better ls
 # Stay in visited directory ranger
 alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'

@@ -8,7 +8,7 @@
 
 # Autostart
 pgrep -x sxhkd > /dev/null || sxhkd & # Hotkey daemon
-~/.config/polybar/launch.sh --hack # Bar
+~/.config/polybar/launch.sh # Bar
 picom & # Compositor
 
 # Workspaces

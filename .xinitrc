@@ -1,25 +1,30 @@
 # ----------------------
 # CONFIG
 # ----------------------
-EDITOR='nvim'
+export EDITOR='nvim'
 
 # ----------------------
 # PATH DIRECTORIES
 # ----------------------
 
-PATH=$PATH:$HOME/.scripts # Scripts folder
+export PATH="$PATH:$HOME/.scripts" # Scripts folder
 
+# ----------------------
+# THEME
+# ----------------------
 
+# Get a random wallpaper
+export WALLPAPER_PATH=`get_rand_wallpaper.sh`
 
+# Colorschemes + wallpaper
+wal -i $WALLPAPER_PATH
 
-
-
+# ----------------------
+# MISC
+# ----------------------
 
 # Faster keyboard retype
 xset r rate 250 45
-
-# Wallpaper
-feh --bg-fill --randomize ~/Pictures/wallpapers/sfw/*
 
 # Startup apps
 # ./.startup_apps.sh

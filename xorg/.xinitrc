@@ -19,6 +19,9 @@ export WALLPAPER_PATH=`get_rand_wallpaper.sh`
 # Colorschemes + wallpaper
 wal -i $WALLPAPER_PATH
 
+# Generate alacritty colors
+pywal_to_alacritty.sh
+
 # ----------------------
 # MISC
 # ----------------------

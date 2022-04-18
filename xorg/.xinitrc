@@ -14,13 +14,10 @@ export PATH="$PATH:$HOME/.scripts" # Scripts folder
 # ----------------------
 
 # Get a random wallpaper
-export WALLPAPER_PATH=`get_rand_wallpaper.sh`
+export WALLPAPER_PATH=`~/.scripts/get_rand_wallpaper.sh`
 
 # Colorschemes + wallpaper
-wal -i $WALLPAPER_PATH
-
-# Generate alacritty colors
-pywal_to_alacritty.sh
+~/.scripts/wal_complete.sh -i $WALLPAPER_PATH
 
 # ----------------------
 # MISC

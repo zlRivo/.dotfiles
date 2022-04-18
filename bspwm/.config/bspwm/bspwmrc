@@ -10,6 +10,7 @@
 pgrep -x sxhkd > /dev/null || sxhkd & # Hotkey daemon
 ~/.config/polybar/launch.sh # Bar
 picom & # Compositor
+~/.config/dunst/launch.sh & # Notifications
 
 # Workspaces
 bspc monitor -d 一 二 三 四 五

@@ -64,6 +64,10 @@ super + Print
 super + {_, shift + }Return
     {alacritty, rofi -show drun}
 
+# Emoji menu
+super + period
+    rofi -show emoji -modi emoji
+
 # Nautilus, Browser
 super + space + {e,b}
     {nautilus, firefox}

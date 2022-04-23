@@ -170,7 +170,7 @@ vim.g.completeopt = "menu,menuone,noselect,noinsert"
 -- Treesitter
 local configs = require'nvim-treesitter.configs'
 configs.setup {
-    ensure_installed = {"c", "rust", "lua", "bash"},
+    ensure_installed = {"c", "rust", "lua", "bash", "java"},
     highlight = { -- enable highlighting
         enable = true,
     },

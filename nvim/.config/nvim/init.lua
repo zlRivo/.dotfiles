@@ -27,12 +27,12 @@ end
 -- BINDINGS
 -- ----------------------------
 
--- Convenience binds
 -- Copy to end of line
 nmap("Y", "y$")
+
 -- Move text
-vmap("K", ":m '>+1<CR>gv=gv")
-vmap("L", ":m '<-2<CR>gv=gv")
+vmap("J", ":m '>+1<CR>gv=gv")
+vmap("K", ":m '<-2<CR>gv=gv")
 
 -- Leader key
 vim.g.mapleader = " "
@@ -41,15 +41,9 @@ nmap("<SPACE>", "<NOP>")
 -- Navigate between windows
 map("n", "<Leader><Leader>", "<C-w><C-w>")
 
--- Arrows
-map("", "é", "<Right>")
-map("", "l", "<Up>")
-map("", "k", "<Down>")
-map("", "j", "<Left>")
-
 -- Navigate between buffers
-map("", "J", ":BufferLineCyclePrev<CR>")
-map("", "ö", ":BufferLineCycleNext<CR>")
+map("", "H", ":BufferLineCyclePrev<CR>")
+map("", "L", ":BufferLineCycleNext<CR>")
 
 -- Delete current buffer
 map("", "<Leader>d", "Bdelete")
@@ -130,7 +124,7 @@ vim.cmd("set backspace=indent,eol,start")
 vim.opt.splitbelow = true
 
 -- No line break when too much text
-vim.opt.wrap = false
+-- vim.opt.wrap = false
 
 -- Disable swap/backup
 vim.opt.swapfile = false

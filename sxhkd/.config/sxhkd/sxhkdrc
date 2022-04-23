@@ -74,5 +74,9 @@ super + period
     rofi -show emoji -modi emoji
 
 # Nautilus, Browser
-super + space + {e,b}
+super + space + {e, b}
     {nautilus, firefox}
+
+# Sound mixer
+super + space + a
+    alacritty --class "pulsemixer" -e "pulsemixer"

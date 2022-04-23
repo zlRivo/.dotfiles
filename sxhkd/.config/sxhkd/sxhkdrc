@@ -52,10 +52,14 @@ super + Print
 # ------------------------------
 #             SOUND
 # ------------------------------
-super + {F6, F7, F8}
-    pamixer {--toggle-mute, -d 5, -i 5}
+super + F6
+    pamixer --toggle-mute && notify-send "Sound" "Volume toggled"
     
+super + {F7, F8}
+    pamixer {-d 5, -i 5} && play ~/Music/sounds/pop.mp3
 
+super + alt + {F7, F8}
+    pamixer {-d 1, -i 1} && play ~/Music/sounds/pop.mp3
 
 # ------------------------------
 #             APPS

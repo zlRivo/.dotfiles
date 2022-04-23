@@ -52,7 +52,8 @@ super + Print
 # ------------------------------
 #             SOUND
 # ------------------------------
-# super + {KP_Add, KP_Subtract}
+super + {F6, F7, F8}
+    pamixer {--toggle-mute, -d 5, -i 5}
     
 
 

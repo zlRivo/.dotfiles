@@ -24,6 +24,6 @@ bspc config ignore_ewmh_focus true # Don't change workspace on app startup
 bspc rule -a Alacritty:Alacritty desktop=^1 state=tiled
 bspc rule -a Alacritty:pulsemixer state=floating
 bspc rule -a firefox desktop=^2
-bspc rule -a Org.gnome.Nautilus desktop=^1 state=floating
+bspc rule -a Org.gnome.Nautilus rectangle=800x800 state=floating
 bspc rule -a cool-retro-term state=fullscreen
 bspc rule -a Ymuse state=floating

@@ -56,10 +56,10 @@ super + F6
     pamixer --toggle-mute && notify-send "Sound" "Volume toggled"
     
 super + {F7, F8}
-    pamixer {-d 5, -i 5} && play ~/.sounds/pop.mp3
+    pamixer {-d 5, -i 5}
 
 super + alt + {F7, F8}
-    pamixer {-d 1, -i 1} && play ~/.sounds/pop.mp3
+    pamixer {-d 1, -i 1}
 
 # ------------------------------
 #             APPS
@@ -74,9 +74,9 @@ super + period
     rofi -show emoji -modi emoji
 
 # Nautilus, Browser
-super + space + {e, b}
+super + ctrl + {e, b}
     {nautilus, firefox}
 
 # Sound mixer
-super + space + a
+super + ctrl + a
     alacritty --class "pulsemixer" -e "pulsemixer"

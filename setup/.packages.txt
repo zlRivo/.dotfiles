@@ -1,1 +1,1 @@
-sxhkd bspwm neovim vim htop neofetch sxiv mpv nautilus alacritty rofi dmenu git ranger lsd feh ffmpeg libinput mpd mpc ncmpcpp xorg-xev zathura dunst xsel ueberzug pamixer pulsemixer picom ytdlp sox pwndbg rofi-emoji
+sxhkd bspwm neovim vim htop neofetch sxiv mpv nautilus alacritty rofi dmenu git ranger lsd feh ffmpeg libinput mpd mpc ncmpcpp xorg-xev zathura dunst xsel ueberzug pamixer pulsemixer picom yt-dlp sox pwndbg rofi-emoji

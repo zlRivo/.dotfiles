@@ -10,4 +10,8 @@ alias vim='nvim' # Default nvim
 alias vi='nvim' # Default nvim
 alias v='nvim' # Default nvim
 
-alias wal='~/.scripts/wal_complete.sh' # Default nvim
+alias wal='~/.scripts/wal_complete.sh' # Wallpaper setter
+alias randwal='wal -i `get_rand_wallpaper.sh`' # Random wallpaper
+
+alias ssh='TERM=xterm-256color ssh' # SSH
+alias sshpi='ssh -i ~/.ssh/raspi pi@192.168.1.254'

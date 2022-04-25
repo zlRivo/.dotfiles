@@ -11,36 +11,32 @@ font:
 
     # The `style` can be specified to pick a specific face.
     style: Regular
-shell:
-  program: /usr/bin/zsh
-  args:
-    - -l
-    - -c
-    - "tmux attach || tmux"
+window:
+  opacity: 0.9
 # BEGIN ACE
 colors:
   primary:
-    background: '#120c09'
-    foreground: '#c8bdb0'
+    background: '#040203'
+    foreground: '#ded0dc'
   cursor:
-    text:       '#120c09'
-    cursor:     '#c8bdb0'
+    text:       '#040203'
+    cursor:     '#ded0dc'
   normal:
-    black:      '#120c09'
-    red:        '#624539'
-    green:      '#3F404E'
-    yellow:     '#4C4750'
-    blue:       '#725C52'
-    magenta:    '#8B3B32'
-    cyan:       '#8B6E5E'
-    white:      '#c8bdb0'
+    black:      '#040203'
+    red:        '#B03B97'
+    green:      '#ED1E9C'
+    yellow:     '#FD1298'
+    blue:       '#FD229F'
+    magenta:    '#999898'
+    cyan:       '#A58E9B'
+    white:      '#ded0dc'
   bright:
-    black:      '#8c847b'
-    red:        '#624539'
-    green:      '#3F404E'
-    yellow:     '#4C4750'
-    blue:       '#725C52'
-    magenta:    '#8B3B32'
-    cyan:       '#8B6E5E'
-    white:      '#c8bdb0'
+    black:      '#9b919a'
+    red:        '#B03B97'
+    green:      '#ED1E9C'
+    yellow:     '#FD1298'
+    blue:       '#FD229F'
+    magenta:    '#999898'
+    cyan:       '#A58E9B'
+    white:      '#ded0dc'
 # END ACE

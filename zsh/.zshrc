@@ -1,5 +1,5 @@
 # Aliases
-source ~/.aliases.sh
+. ~/.aliases.sh
 
 # Load version control information
 autoload -Uz vcs_info

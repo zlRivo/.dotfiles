@@ -15,3 +15,4 @@ alias randwal='wal -i `get_rand_wallpaper.sh`' # Random wallpaper
 
 alias ssh='TERM=xterm-256color ssh' # SSH
 alias sshpi='ssh -i ~/.ssh/raspi pi@192.168.1.254'
+alias startxsfw='export WALLPAPER_DIR=~/Pictures/wallpapers/sfw; startx'

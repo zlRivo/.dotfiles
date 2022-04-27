@@ -14,10 +14,10 @@ export PATH="$PATH:$HOME/.scripts" # Scripts folder
 # ----------------------
 
 # Get a random wallpaper
-export WALLPAPER_PATH=`~/.scripts/get_rand_wallpaper.sh`
+WALLPAPER=`~/.scripts/get_rand_wallpaper.sh`
 
 # Colorschemes + wallpaper
-~/.scripts/wal_complete.sh -i $WALLPAPER_PATH
+~/.scripts/wal_complete.sh -i $WALLPAPER
 
 # ----------------------
 # MISC

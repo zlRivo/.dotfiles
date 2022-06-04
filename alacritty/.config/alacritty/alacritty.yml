@@ -12,31 +12,36 @@ font:
     # The `style` can be specified to pick a specific face.
     style: Regular
 window:
-  opacity: 0.9
+  background_opacity: 0.9
+  padding:
+    x: 30
+    y: 30
+selection:
+  save_to_clipboard: true
 # BEGIN ACE
 colors:
   primary:
-    background: '#29222d'
-    foreground: '#e3e1e8'
+    background: '#0e0421'
+    foreground: '#f2e9de'
   cursor:
-    text:       '#29222d'
-    cursor:     '#e3e1e8'
+    text:       '#0e0421'
+    cursor:     '#f2e9de'
   normal:
-    black:      '#29222d'
-    red:        '#7C88CC'
-    green:      '#A197A4'
-    yellow:     '#9DA1CE'
-    blue:       '#B3B4D1'
-    magenta:    '#CABCC2'
-    cyan:       '#CBCAD6'
-    white:      '#e3e1e8'
+    black:      '#0e0421'
+    red:        '#95709E'
+    green:      '#CF7292'
+    yellow:     '#AB8EAB'
+    blue:       '#D8A5A7'
+    magenta:    '#F8E1A7'
+    cyan:       '#CCA6C5'
+    white:      '#f2e9de'
   bright:
-    black:      '#9e9da2'
-    red:        '#7C88CC'
-    green:      '#A197A4'
-    yellow:     '#9DA1CE'
-    blue:       '#B3B4D1'
-    magenta:    '#CABCC2'
-    cyan:       '#CBCAD6'
-    white:      '#e3e1e8'
+    black:      '#a9a39b'
+    red:        '#95709E'
+    green:      '#CF7292'
+    yellow:     '#AB8EAB'
+    blue:       '#D8A5A7'
+    magenta:    '#F8E1A7'
+    cyan:       '#CCA6C5'
+    white:      '#f2e9de'
 # END ACE

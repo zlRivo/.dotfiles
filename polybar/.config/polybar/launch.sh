@@ -1,5 +1,5 @@
 # Killall polybars
 killall -q polybar
 
-polybar -q top > /dev/null & disown
-polybar -q bottom > /dev/null & disown
+polybar -q top --config=~/.config/polybar/config.ini > /dev/null & disown
+polybar -q bottom --config=~/.config/polybar/config.ini > /dev/null & disown

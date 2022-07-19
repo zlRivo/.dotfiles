@@ -1,5 +1,7 @@
 # Aliases
 . ~/.aliases.sh
+# Path dir
+. ~/.pathdirs.sh
 
 # Load version control information
 autoload -Uz vcs_info

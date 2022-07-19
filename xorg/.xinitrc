@@ -4,20 +4,21 @@
 export EDITOR='nvim'
 
 # ----------------------
-# PATH DIRECTORIES
-# ----------------------
-
-export PATH="$PATH:$HOME/.scripts" # Scripts folder
-
-# ----------------------
 # THEME
 # ----------------------
 
 # Get a random wallpaper
-WALLPAPER=`~/.scripts/get_rand_wallpaper.sh`
+# WALLPAPER=`~/.scripts/get_rand_wallpaper.sh`
+WALLPAPER=~/Pictures/wallpapers/hololive/ayame_sword.png
 
 # Colorschemes + wallpaper
 ~/.scripts/wal_complete.sh -i $WALLPAPER
+
+
+# ----------------------
+# SOUND
+# ----------------------
+# ~/.scripts/start_pipewire.sh &
 
 # ----------------------
 # MISC

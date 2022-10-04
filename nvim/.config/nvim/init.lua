@@ -195,7 +195,7 @@ vim.cmd("hi Pmenu ctermbg=0 ctermfg=8")
 
 -- Airline
 vim.opt.laststatus = 2
-vim.g.airline_theme = "wal"
+vim.g.airline_theme = "onedark"
 vim.g.airline_powerline_fonts = 1
 -- Airline symbols
 if vim.api.nvim_eval('exists("g:airline_symbols")') == "1" then

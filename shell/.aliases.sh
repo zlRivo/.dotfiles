@@ -16,3 +16,6 @@ alias sshpi='ssh -i ~/.ssh/raspi pi@raspberrypi.local'
 
 # Disable ASLR
 alias noaslr='setarch `uname -m` -R $SHELL'
+
+# Start HTB OpenVPN
+alias htbvpn='sudo openvpn ~/Documents/vpn/htb_machines.ovpn'

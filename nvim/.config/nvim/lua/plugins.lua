@@ -44,6 +44,9 @@ return require('packer').startup(function()
         requires = { {'nvim-lua/plenary.nvim'} }
     }
 
+    -- Discord rich presence
+    use 'andweeb/presence.nvim'
+
     -- Nice buffer tabs
     use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
     

@@ -23,6 +23,12 @@ bspc config split_ratio 0.6
 # Sound (on gentoo)
 # ~/.scripts/start_pipewire.sh &
 
+<<<<<<< HEAD
+=======
+# Fix java apps
+export _JAVA_AWT_WM_NONREPARENTING=1
+
+>>>>>>> 5aee684 (dotfiles)
 # Default editor
 export EDITOR='nvim'
 

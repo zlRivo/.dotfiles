@@ -158,6 +158,11 @@ vim.opt.expandtab = true
 vim.g.completeopt = "menu,menuone,noselect,noinsert"
 
 -- ---------------------------
+-- DISCORD RICH PRESENCE
+-- ---------------------------
+require('nvim-discord-rpc')
+
+-- ---------------------------
 -- LSP CONFIGURATION + Treesitter
 -- ---------------------------
 

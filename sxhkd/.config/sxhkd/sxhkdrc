@@ -46,8 +46,13 @@ super + shift + Escape
 super + Escape
 	pkill -USR1 -x sxhkd
 
+# Screenshotting
 super + Print
     flameshot gui
+
+# Lock screen
+super + shift + l
+    i3lock-fancy
 
 # ------------------------------
 #             SOUND

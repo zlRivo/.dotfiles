@@ -51,7 +51,7 @@ super + Print
     flameshot gui
 
 # Lock screen
-super + shift + l
+super + ctrl + l
     i3lock-fancy
 
 # ------------------------------

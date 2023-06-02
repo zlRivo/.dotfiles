@@ -49,6 +49,9 @@ super + Escape
 super + Print
     flameshot gui
 
+super + ctrl + l
+    i3lock-fancy
+
 # ------------------------------
 #             SOUND
 # ------------------------------

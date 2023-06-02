@@ -9,7 +9,8 @@ export EDITOR='nvim'
 
 # Get a random wallpaper
 # WALLPAPER=`~/.scripts/get_rand_wallpaper.sh`
-WALLPAPER=~/Pictures/wallpapers/hololive/ayame_sword.png
+# WALLPAPER=~/Pictures/wallpapers/hololive/ayame_sword.png
+WALLPAPER=~/Pictures/wallpapers/other/capybara.jpg
 
 # Colorschemes + wallpaper
 ~/.scripts/wal_complete.sh -i $WALLPAPER

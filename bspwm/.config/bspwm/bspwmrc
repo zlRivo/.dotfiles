@@ -6,6 +6,22 @@
 #                 ░▀▀░░▀▀▀░▀░░░▀░▀░▀░▀
 #
 
+# ----------------------
+# THEME
+# ----------------------
+
+# Get a random wallpaper
+# WALLPAPER=`~/.scripts/get_rand_wallpaper.sh`
+# WALLPAPER=~/Pictures/wallpapers/hololive/ayame_sword.png
+WALLPAPER=~/Pictures/wallpapers/other/capybara.jpg
+
+# Colorschemes + wallpaper
+~/.scripts/wal_complete.sh -i $WALLPAPER
+
+# ----------------------
+# CONFIG
+# ----------------------
+
 # Autostart
 pgrep -x sxhkd > /dev/null || sxhkd & # Hotkey daemon
 ~/.config/polybar/launch.sh # Bar
@@ -24,8 +40,23 @@ bspc config ignore_ewmh_focus true # Don't change workspace on app startup
 bspc config pointer_motion_interval 7 # 144hz floating window
 bspc rule -a Alacritty:Alacritty state=tiled
 bspc rule -a gl:mpv state=fullscreen
-bspc rule -a Alacritty:pulsemixer state=floating
-bspc rule -a firefox
+bspc rule -a pulsemixer state=floating
+bspc rule -a firefox desktop='^3'
+bspc rule -a discord desktop='^2'
 bspc rule -a Org.gnome.Nautilus rectangle=800x800 state=floating
 bspc rule -a cool-retro-term state=fullscreen
 bspc rule -a Ymuse state=floating
+
+# ----------------------
+# MISC
+# ----------------------
+
+export EDITOR='nvim'
+
+# Faster keyboard retype
+xset r rate 250 45
+
+# Startup apps
+./.startup_apps.sh
+
+exec bspwm

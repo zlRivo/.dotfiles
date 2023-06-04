@@ -60,7 +60,7 @@ font-0 = JetBrainsMono Nerd Font:size=10;2
 font-1 = IPAPMincho,IPA P明朝:style=Regular:size=10;2
 
 modules-left = xworkspaces xwindow
-modules-right = pulseaudio date
+modules-right = pulsesink pulseaudio date
 
 cursor-click = pointer
 cursor-scroll = pointer
@@ -104,7 +104,7 @@ font-1 = IPAPMincho,IPA P明朝:style=Regular:size=10;2
 
 modules-left = memory cpu battery
 modules-center = 
-modules-right = wlan
+modules-right = bluetooth wlan
 
 cursor-click = pointer
 cursor-scroll = pointer

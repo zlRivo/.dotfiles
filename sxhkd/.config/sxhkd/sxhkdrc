@@ -46,6 +46,10 @@ super + shift + Escape
 super + Escape
 	pkill -USR1 -x sxhkd
 
+# Adjust brightness
+XF86MonBrightness{Up,Down}  
+  brightnessctl s 100{+,-}
+
 # Screenshotting
 super + Print
     flameshot gui
@@ -57,14 +61,20 @@ super + ctrl + l
 # ------------------------------
 #             SOUND
 # ------------------------------
-super + F6
-    pamixer --toggle-mute && notify-send "Sound" "Volume toggled"
-    
-super + {F7, F8}
-    pamixer {-d 5, -i 5}
 
-super + alt + {F7, F8}
-    pamixer {-d 1, -i 1}
+# Volume
+XF86Audio{Raise,Lower}Volume  
+    pulsemixer --change-volume {+,-}5
+
+XF86AudioMute  
+    pulsemixer  --toggle-mute
+
+# Multimedia
+XF86AudioPlay
+    playerctl play-pause
+
+XF86Audio{Prev,Next}
+    playerctl {previous, next}
 
 # ------------------------------
 #             APPS

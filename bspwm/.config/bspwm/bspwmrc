@@ -13,7 +13,7 @@
 # Get a random wallpaper
 # WALLPAPER=`~/.scripts/get_rand_wallpaper.sh`
 # WALLPAPER=~/Pictures/wallpapers/hololive/ayame_sword.png
-WALLPAPER=~/Pictures/wallpapers/other/capybara.jpg
+WALLPAPER=~/Pictures/wallpapers/other/crow.jpg
 
 # Colorschemes + wallpaper
 ~/.scripts/wal_complete.sh -i $WALLPAPER
@@ -22,14 +22,23 @@ WALLPAPER=~/Pictures/wallpapers/other/capybara.jpg
 # CONFIG
 # ----------------------
 
+# Workspaces
+bspc monitor eDP-1 -d 一 二 三 四 五
+
+# External monitor
+~/.config/bspwm/use_external_monitor.sh
+
+if [[ ! -z $(xrandr -q | grep 'HDMI-1-0 connected') ]]; then
+	xrandr --output eDP-1 --primary --mode 1920x1080 --rotate normal --output HDMI-1-0 --mode 1920x1080 --rotate normal --right-of eDP-1
+	bspc monitor HDMI-1-0 -d 6 7 8 9 0
+	feh --bg-fill ~/Pictures/wallpapers/other/crow.jpg
+fi
+
 # Autostart
 pgrep -x sxhkd > /dev/null || sxhkd & # Hotkey daemon
 ~/.config/polybar/launch.sh # Bar
 picom & # Compositor
 ~/.config/dunst/launch.sh & # Notifications
-
-# Workspaces
-bspc monitor -d 一 二 三 四 五
 
 # Bspwm config
 bspc config border_width 2
@@ -63,6 +72,7 @@ bspc rule -a gl:mpv state=fullscreen
 bspc rule -a pulsemixer state=floating
 bspc rule -a firefox desktop='^3'
 bspc rule -a discord desktop='^2'
+bspc rule -a thunar state=floating
 bspc rule -a Org.gnome.Nautilus rectangle=800x800 state=floating
 bspc rule -a cool-retro-term state=fullscreen
 bspc rule -a Ymuse state=floating

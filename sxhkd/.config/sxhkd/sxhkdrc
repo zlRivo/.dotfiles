@@ -51,8 +51,8 @@ XF86MonBrightness{Up,Down}
   brightnessctl s 100{+,-}
 
 # Screenshotting
-super + Print
-    flameshot gui
+super + {_, shift + }Print
+    flameshot {screen, gui}
 
 # Lock screen
 super + ctrl + l

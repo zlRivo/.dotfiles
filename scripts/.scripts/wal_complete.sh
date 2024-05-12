@@ -5,6 +5,7 @@ STATUS=$? # Get pywal return status
 # Call other scripts
 ~/.scripts/pywal_to_alacritty.sh
 ~/.scripts/pywal_to_dunst.sh
+~/.scripts/pywal_to_rofi.sh
 
 # Restart programs manually (if running)
 pidof dunst && ~/.config/dunst/launch.sh

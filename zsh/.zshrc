@@ -22,7 +22,13 @@ precmd() { vcs_info }
 zstyle ':vcs_info:git:*' formats ' %b'
 
 setopt PROMPT_SUBST
+setopt INC_APPEND_HISTORY
 
 # Prompt
 PROMPT='%F{blue}%~ %#%F{white} '
 RPROMPT='%F{yellow}${vcs_info_msg_0_}'
+
+# History file
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000

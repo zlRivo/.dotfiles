@@ -1,4 +1,4 @@
 #/bin/sh
 firefox &
-discord &
+# discord &
 # ...

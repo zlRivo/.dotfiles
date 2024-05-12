@@ -1,0 +1,9 @@
+/* colors */
+
+* {{
+  al:    #00000000;
+  bg:    {color1}FF;
+  ac:    {color7}FF;
+  se:    {color0}FF;
+  fg:    {color7}FF;
+}}

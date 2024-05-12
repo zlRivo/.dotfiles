@@ -90,7 +90,7 @@ super + period
 
 # Nautilus, Browser
 super + ctrl + {e, b}
-    {nautilus, firefox}
+    {thunar, firefox}
 
 # Sound mixer
 super + ctrl + a

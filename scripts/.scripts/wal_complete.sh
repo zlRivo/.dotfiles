@@ -3,7 +3,7 @@ wal "$@"
 STATUS=$? # Get pywal return status
 [ $STATUS -ne 0 ] && exit "$STATUS" # Check if error
 # Call other scripts
-~/.scripts/pywal_to_alacritty.sh
+~/.scripts/pywal_to_alacritty_toml.sh
 ~/.scripts/pywal_to_dunst.sh
 ~/.scripts/pywal_to_rofi.sh
 

@@ -1,30 +1,32 @@
+# BEGIN ACE
 [colors.bright]
-black = "#9aa5a8"
-blue = "#A99FD2"
-cyan = "#AEDBF0"
-green = "#8A74B3"
-magenta = "#CABAD2"
-red = "#6A5E96"
-white = "#dcecf1"
-yellow = "#9B9AA6"
+black = "#281c1f"
+red = "#55929E"
+green = "#4D9CB4"
+yellow = "#6398DD"
+blue = "#98A1AB"
+magenta = "#C3C0B7"
+cyan = "#B1CAD7"
+white = "#e1e7ea"
 
 [colors.cursor]
-cursor = "#dcecf1"
-text = "#14111a"
+cursor = "#e1e7ea"
+text = "#281c1f"
 
 [colors.normal]
-black = "#14111a"
-blue = "#A99FD2"
-cyan = "#AEDBF0"
-green = "#8A74B3"
-magenta = "#CABAD2"
-red = "#6A5E96"
-white = "#dcecf1"
-yellow = "#9B9AA6"
+black = "#281c1f"
+red = "#55929E"
+green = "#4D9CB4"
+yellow = "#6398DD"
+blue = "#98A1AB"
+magenta = "#C3C0B7"
+cyan = "#B1CAD7"
+white = "#e1e7ea"
 
 [colors.primary]
-background = "#14111a"
-foreground = "#dcecf1"
+background = "#281c1f"
+foreground = "#e1e7ea"
+# END ACE
 
 [font.normal]
 family = "JetBrainsMono Nerd Font"
